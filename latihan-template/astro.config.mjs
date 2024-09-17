@@ -12,13 +12,19 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Start Here',
-					autogenerate: { directory: 'start-here' },
+					items: [
+						// Each item here is one entry in the navigation menu.
+						{ label: 'Getting Started', slug: 'start/started' },
+						{ label: 'Manual Setup', slug: 'start/manual' },
+						{ label: 'Environmental Impact', slug: 'start/enviroment' },
+					],
 				},
 				{
 					label: 'Guides',
 					items: [
 						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
+						{ label: 'Pages', slug: 'guides/pages' },
+						{ label: 'Authoring Content in Markdown', slug: 'guides/authoring' },
 					],
 				},
 				{
